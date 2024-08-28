@@ -1,0 +1,251 @@
+@media screen and (max-width: 1280px) {
+
+    header .inner .gotop {
+        width: 125px;
+        right: 25px;
+        bottom: 25px;
+    }
+    main .section:nth-child(1) .mainbg {
+        height: 90%;
+    }
+    main .section:nth-child(1) h1 {
+        font-size: 7rem;
+        top: 110px;
+        right: 60px;
+    }
+    main .section:nth-child(1) p {
+        top: 210px;
+        right: 65px;
+    }
+
+    main .section:nth-child(2) span {
+        font-size: 6.5rem;
+    } 
+
+    main .section:nth-child(2) .inter {
+        width: 576px;
+        height: 324px;
+        left: 100px;
+    }
+
+    main .section:nth-child(2) .inter video {
+        width: 576px;
+        height: 324px;
+    }
+
+    main .section:nth-child(2) .inter p {
+        bottom: -50%;
+    }
+
+    main .section:nth-child(2) .box {
+        width: 450px;
+        height: 600px;
+        right: 70px;
+    }
+
+    main .section:nth-child(2) .box .name {
+        margin: 130px 105px 0;
+    }
+
+    main .section:nth-child(2) .box .name h3 {
+        font-size: 2.25rem;
+        left: 40px;
+    }
+
+    main .section:nth-child(2) .box p {
+        top: 15px;
+        left: 120px;
+    }
+    
+    main .section:nth-child(2) .box .icon {
+        bottom: 185px;
+    }
+
+    main .section:nth-child(2) .box .one {
+        left: 100px;
+    }
+
+    main .section:nth-child(2) .box .two {
+        left: 195px;
+    }
+
+    main .section:nth-child(2) .box .three {
+        left: 290px;
+    }
+
+    .twopopup {
+        left: -100vw;
+        position: relative;
+    }
+
+    .twopopup .txt button {
+        line-height: 0;
+        position: absolute;
+        top: 60px;
+        left: 60px;
+    }
+
+    .twopopup figure video {
+        width: 960px;
+        height: 540px;
+    }
+    
+    .gallery-header div {
+        font-size: 3rem;
+    }
+
+    .gallery-header .check {
+        font-size: 2.5rem;
+        top: 252px;
+        left: 75px;
+    }
+
+    .gallery-header .check.on {
+        top: 352px;
+    }
+
+    .gallery-collection {
+        padding: 15vh 0 0 5vw;
+    }
+
+    .gallery-collection li figure video {
+        width: 144px;
+        height: 81px;
+        right: 50px;
+    }
+
+    .motion li::after {
+        width: 100%;
+    }
+
+    .motion li .inner .txt h3 {
+        font-size: 2.5rem;
+    }
+
+    .edit li .inner .txt h3 {
+        font-size: 2.5rem;
+    }
+
+    .gallery-collection li:hover .inner .txt h3 {
+        font-size: 5rem;
+    }
+
+    .motion li .inner .txt p {
+        font-size: 2rem;
+        right: 10%;
+    }
+
+    .edit li .inner .txt p {
+        font-size: 3rem;
+        right: 35%;
+    }
+
+    .motion li:hover .inner .txt p {
+        font-size: 3rem;
+        right: 0;
+    }
+
+    .edit li:hover .inner .txt p {
+        font-size: 3rem;
+    }
+
+    .motion li:hover figure {
+        left: 120px;
+        bottom: 20px;
+    }
+     
+    .edit li figure {
+        left: -100px;
+        bottom: 100px;
+    }
+
+    .edit li:hover figure {
+        left: 90px;
+        
+    }
+    
+    .popup {
+        
+    }
+
+    .popup p {
+        display: none;
+    }
+    .popup img {
+        display: none;
+    }
+    .popup .txt button {
+        line-height: 0;
+        position: absolute;
+        top: 60px;
+        left: 60px;
+    }
+
+    .popup figure video {
+        width: 960px;
+        height: 540px;
+    }
+
+    .section:nth-child(4) h3 {
+        font-size: 15rem;
+    }
+
+    .section:nth-child(4) .box {
+        background: url(../image/4page-background.png) no-repeat center -140px/1000px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        font-size: 3rem;
+    }
+    header .inner {
+        width: 768px;
+    }
+    
+    main .section:nth-child(1) .mainbg {
+        height: 75%;
+    }
+    
+    main .section:nth-child(1) h1 {
+        font-size: 5rem;
+        top: 120px;
+        right: 50px;
+    }
+
+    main .section:nth-child(1) p {
+        font-size: 1.5rem;
+        top: 200px;
+        right: 50px;
+    }
+
+    main .section:nth-child(2) span {
+        font-size: 5.5rem;
+        left: 50px;
+        top: 75px;
+    } 
+
+    main .section:nth-child(2) .inter {
+        width: 728px;
+        height: 418px;
+        top: 70px;
+        left: 20px;
+    }
+
+    main .section:nth-child(2) .inter video {
+        width: 728px;
+        height: 418px;
+    }
+
+    main .section:nth-child(2) .inter p {
+        display: none;
+    }
+
+    main .section:nth-child(2) .box {
+        width: 768px;
+        height: 438px;
+        background: none;
+    }
+
+}

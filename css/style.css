@@ -1,0 +1,668 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'soak';
+    src: url('../fonts/Soak\ Up\ The\ Sun\ Script\ -\ Bold.otf') format('truetype');
+}
+@font-face {
+    font-family: 'my';
+    src: url('../fonts/MYYeongnamnu.ttf')
+    format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(../image/normal.png)2 2, auto;
+}
+
+*:active {
+    cursor: url(../image/hover.png)2 2, auto;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+    background: url(../image/background.jpg) no-repeat center/cover;
+}
+section {
+    width: 1920px;
+    height: 960px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+header {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'soak';
+    color: white;
+    position: fixed;
+    z-index: 9;
+}
+
+header .inner {
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header .inner ul li {
+    float: left;
+    width: 25%;
+    transition: color .5s;
+}
+
+header .inner ul li:hover {
+    background: url(../image/header\ paint\ white.PNG) no-repeat 20px center/cover;
+    color: #3AC6FF;
+}
+
+header .inner ul li a {
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+}
+
+header .inner ul li::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+header .inner ul.on li {
+    color: #3AC6FF;
+}
+
+header .inner ul.on li:hover {
+    background: url(../image/header\ paint\ skyblue.PNG) no-repeat 20px center/cover;
+    color: white;
+    z-index: 999;
+}
+
+header .inner .gotop {
+    width: 150px;
+    height: 137.5px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 90;
+    background: url(../image/1.png) no-repeat top left/cover;
+    display: block;
+    transition: all .5s;
+}
+
+header .inner .gotop a {
+    width: 150px;
+    height: 137.5px;
+    display: block;
+    color: transparent;
+}
+
+header .inner .gotop.two {
+    background: url(../image/2.png) no-repeat top left/cover;
+}
+
+header .inner .gotop.three {
+    background: url(../image/3.png) no-repeat top left/cover;
+}
+
+header .inner .gotop.four {
+    background: url(../image/4.png) no-repeat top left/cover;
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+main {
+    width: 100%;
+    height: 3840px;
+}
+
+main section {
+    width: 100%;
+    height: 100%;
+}
+
+main .section:nth-child(1) {
+    position: relative;
+}
+
+main .section:nth-child(1) .mainbg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../image/1page-background.png) no-repeat center/cover;
+    position: absolute;
+    top: -70px;
+    left: 0;
+}
+
+main .section:nth-child(1) h1 {
+    font-family: 'soak';
+    font-size: 8rem;
+    color: white;
+    position: absolute;
+    top: 150px;
+    right: 200px;
+}
+
+main .section:nth-child(1) p {
+    font-family: 'soak';
+    font-size: 2.5rem;
+    color: white;
+    position: absolute;
+    top: 280px;
+    right: 200px;
+}
+
+main .section:nth-child(2) {
+    position: relative;
+}
+
+main .section:nth-child(2) span {
+    font-family: 'soak';
+    font-size: 8rem;
+    color: #3AC6FF;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+main .section:nth-child(2) .inter {
+    width: 720px;
+    height: 405px;
+    position: absolute;
+    top: 227.5px;
+    left: 275px;
+    border-radius: 10px;
+}
+
+main .section:nth-child(2) .inter img {
+    width: 720px;
+    height: 405px;
+    background-color: black;
+    border-radius: 10px;
+    cursor: url(../image/hover.png)2 2, auto;
+}
+
+main .section:nth-child(2) .inter p {
+    position: absolute;
+    font-size: 6rem;
+    font-family: 'soak';
+    color: #3AC6FF;
+    bottom: -40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: url(../image/hover.png)2 2, auto;
+}
+
+main .section:nth-child(2) .box {
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    top: 100px;
+    right: 275px;
+    background: url('../image/캔버스.PNG') no-repeat center/cover;
+}
+
+main .section:nth-child(2) .box .name {
+    background: url('../image/name.png')no-repeat center/cover;
+    margin: 190px 130px 0;
+} 
+
+main .section:nth-child(2) .box .name h3 {
+    font-family: 'my';
+    font-weight: normal;
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    top: 0;
+    left: 55px;
+}
+
+main .section:nth-child(2) .box p {
+    font-family: 'my';
+    font-weight: normal;
+    font-size: 1.7rem;
+    color: #3AC6FF;
+    position: relative;
+    line-height: 55px;
+    top: 30px;
+    left: 150px;
+}
+
+main .section:nth-child(2) .box .icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-color: black;
+    position: absolute;
+    bottom: 275px;
+    border: 3px solid #3AC6FF;
+    border-radius: 10px;
+}
+
+main .section:nth-child(2) .box .one {
+    left: 170px;
+    background: url(../image/after\ effect.png) no-repeat center/50px 50px;
+}
+
+main .section:nth-child(2) .box .two {
+    left: 270px;
+    background: url(../image/premier.png) no-repeat center/50px 50px;
+}
+
+main .section:nth-child(2) .box .three {
+    left: 370px;
+    background: url(../image/visual.png) no-repeat center/50px 50px;
+}
+
+.twopopup {
+    position: absolute;
+    top: 0;
+    /* display: none; */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, .8);
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    left: -100vw;
+    transition: all .5s;
+}
+
+.twopopup.on {
+    left: 0;
+    z-index: 99;
+}
+
+.twopopup .txt button {
+    width: 100px;
+    height: 120px;
+    line-height: 100px;
+    font-size: 1.8rem;
+    background-color: transparent;
+    border: none;
+    cursor: url(../image/hover.png)2 2, auto;
+    color: #3AC6FF;
+    transition: all .5s;
+}
+
+.twopopup figure {
+    height: 100%;
+}
+
+.twopopup figure iframe {
+    width: 1344px;
+    height: 756px;
+    object-fit: cover;
+}
+
+/* ------------------------------------------------------------------------ */
+
+.gallery {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.gallery-header {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 5vw;
+    font-family: 'soak';
+    font-size: 6rem;
+    position: relative;
+}
+
+.gallery-header h2 {
+    text-align: center;
+    color: #3AC6FF;
+}
+
+.gallery-header div {
+    font-size: 4.5rem;
+    color: white;
+    cursor: url(../image/hover.png)2 2, auto;
+}
+
+.gallery-header div:hover {
+    color: #3AC6FF;
+}
+
+.gallery-header .mo {
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    transition: all 0.5s;
+    color: #3AC6FF;
+}
+
+.gallery-header .ef {
+    position: absolute;
+    top: 350px;
+    left: 120px;
+    transition: all 0.5s;
+}
+
+.gallery-header .check {
+    font-size: 4rem;
+    color: #3AC6FF;
+    position: absolute;
+    left: 65px;
+    top: 250px;
+    font-family: 'my';
+    transition: all 0.5s;
+}
+.gallery-header .check.on {
+    top: 350px;
+}
+
+.gallery-collection {
+    display: flex;
+    width: 70vw;
+    height: 95%;
+    padding: 10vh 0 0 5vw;
+}
+
+.motion {
+    display: flex;
+    width: 70vw;
+    height: 95%;
+    padding: 10vh 0 0 5vw; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.editbox {
+    display: none;
+}
+
+.edit {
+    display: flex;
+    width: 70vw;
+    height: 95%;
+    padding: 10vh 0 0 5vw; 
+    justify-content: space-between;
+}
+
+.motion li {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    padding: 0 25px;
+    cursor: url(../image/hover.png)2 2, auto;
+    opacity: .6;
+    transition: all 1s;
+    position: relative;
+}
+
+.edit li {
+    width: 500px;
+    height: 70%;
+    display: flex;
+    padding: 25px 25px 0;
+    margin: 75px 0 0 0;
+    cursor: url(../image/hover.png)2 2, auto;
+    opacity: .6;
+    transition: all 1s;
+    position: relative;
+}
+
+.gallery-collection li:hover {
+    opacity: 1;
+}
+
+.motion li::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 95%;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    transition: all 1.5s;
+    background-color: #3AC6FF;
+    opacity: 0;
+    visibility: hidden;
+    border-top-right-radius: 40%;
+}
+
+.edit li::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 95%;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    transition: all 1.5s;
+    background-color: #3AC6FF;
+    opacity: 0;
+    visibility: hidden;
+    border-top-right-radius: 40%;
+}
+
+.gallery-collection li:hover::after {
+    left: 0;
+    opacity: .5;
+    visibility: visible;
+}
+
+.edit li:hover::after {
+    height: 80%;
+}
+
+.gallery-collection li .inner {
+    display: flex;
+    align-content: space-between;
+    z-index: 9;
+}
+
+.gallery-collection li .inner .txt {
+    width: 100%;
+}
+
+.gallery-collection .inner > p {
+    display: none;
+}
+.gallery-collection .img {
+    display: none;
+}
+
+.motion li .inner .txt h3 {
+    font-family: 'soak';
+    font-size: 3.5rem;
+    color: #3AC6FF;
+    transition: all 1s;
+}
+
+.edit li .inner .txt h3 {
+    font-family: 'soak';
+    font-size: 5rem;
+    color: #3AC6FF;
+    transition: all 1s;
+    margin-left: 15px;
+}
+
+.gallery-collection li:hover .inner .txt h3 {
+    font-size: 6.5rem;
+    padding-top: 0;
+    color: white;
+}
+
+.motion li .inner .txt p {
+    font-family: 'soak';
+    font-size: 3rem;
+    color: #3AC6FF;
+    transition: all 1s;
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    width: 200px;
+}
+
+.edit li .inner .txt p {
+    font-family: 'soak';
+    font-size: 4rem;
+    color: #3AC6FF;
+    transition: all 1s;
+    position: absolute;
+    top: 10%;
+    right: 42%;
+    width: 200px;
+}
+
+.motion li:hover .inner .txt p  {
+    color: white;
+    font-size: 3.5rem;
+    width: 170px;
+}
+
+.edit li:hover .inner .txt p  {
+    color: white;
+    font-size: 5rem;
+    width: 170px;
+}
+
+.motion li figure {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    transition: all 1s;
+}
+.edit li figure {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    transition: all 1s;
+}
+
+.motion li:hover figure {
+    bottom: 30px;
+    left: 40px;
+}
+
+.edit li:hover figure {
+    bottom: 100px;
+    left: 180px;
+}
+
+.gallery-collection li figure iframe {
+    width: 192px;
+    height: 108px;
+    position: absolute;
+    right: 100px;
+    transition: all 1s;
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    /* display: none; */
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, .8);
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    left: -100vw;
+    transition: all .5s;
+}
+
+.popup p {
+    font-family: 'my';
+    color: #3AC6FF;
+    font-size: 2rem;
+}
+
+.popup img {
+    width: 50px;
+    margin-top: 50px;
+    margin-right: 25px;
+}
+
+.popup.on {
+    left: 0;
+    z-index: 99;
+}
+
+.popup .txt button {
+    font-size: 1.8rem;
+    background-color: transparent;
+    border: none;
+    cursor: url(../image/hover.png)2 2, auto;
+    color: #3AC6FF;
+    transition: all .5s;
+    line-height: 100px;
+    height: 120px;
+}
+
+.popup .txt button:hover {
+    text-shadow: 0px 0px 20px white;
+}
+
+.popup figure {
+    height: 100%;
+}
+
+.popup figure iframe {
+    width: 1344px;
+    height: 756px;
+    object-fit: cover;
+}
+
+.section:nth-child(4) {
+    position: relative;
+}
+
+.section:nth-child(4) h3 {
+    font-family: 'soak';
+    font-size: 20rem;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section:nth-child(4) p {
+    font-family: 'soak';
+    font-size: 5rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    line-height: 1;
+    color: white;
+}
+
+.section:nth-child(4) .box {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+    background: url(../image/4page-background.png) no-repeat center -175px/1200px;
+}
+
+.section:nth-child(4):hover .box {
+    opacity: 1;
+
+}
